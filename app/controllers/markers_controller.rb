@@ -46,6 +46,6 @@ class MarkersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def marker_params
-      params.require(:marker).permit(:lat, :lng)
+      params.require(:marker).permit(:lat, :lng, :category)
     end
 end
